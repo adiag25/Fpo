@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #00cc00; /* Green */
+}
+
+.fertilizer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 70%; /* Maximum width for the container */
+    margin: 20px auto; /* Center the container on the page */
+}
+
+.fertilizer-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 100%; /* Take up the entire width of the row */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.fertilizer-item:hover {
+    transform: scale(1.05);
+}
+
+.fertilizer-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Add some spacing between image and info */
+}
+
+.fertilizer-info {
+    text-align: center;
+    flex-grow: 1; /* Grow to take available space */
+}
+
+.fertilizer-actions {
+    display: flex;
+    justify-content: space-between; /* Distribute space between buttons and info */
+    align-items: center;
+    margin-top: 15px;
+}
+
+.buy-now-btn {
+    background-color: #555;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #00cc00; /* Green */
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #00cc00; /* Green */
+}
+
+.quantity-input {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    border-radius: 5px;
+}
